@@ -2,7 +2,8 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  p Bienvenido, la fecha/hora actual es   
+    b.txtHoraActual 00:00
   .container-flow
     .form-group
       button.btn.btn-primary.btn-block Registrar
@@ -25,7 +26,7 @@ block content
         input.txtHoras.form-control.text-right(type="number", name="txtHoras" style="width: 6rem;max-width: 6rem;")
         .input-group-append
           .input-group-text
-            b Total:  
+            b Total:   
             span.TotalStandar 00:00
         .input-group-append
           button.btn.btn-info Trabajadas: 00:00
